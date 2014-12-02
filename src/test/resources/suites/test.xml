@@ -1,8 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite verbose="2" name="GRID status client simple test" parallel="false" thread-count="0" data-provider-thread-count="0" annotations="JDK" configfailurepolicy="continue" >
 	
+	<parameter name="timeout" value="5" />
+	
 	<test name="Grid status simple test">
-		<parameter name="host" value="10.6.158.188" />
+		<parameter name="host" value="192.168.1.4" />
 		<parameter name="browsers" value="firefox,ie"/>
 		<classes>
 			<class name="com.qaprosoft.qa.StatusTest"/>

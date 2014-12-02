@@ -31,14 +31,15 @@ public class StatusTest
 
     private final static Properties CFG_PROPERTIES = PropertiesUtil.loadProperties("grid.properties");
 
-    @Parameters({ "host", "browsers" })
+    @Parameters({ "host", "browsers", "timeout" })
     @Test(groups = "acceptance")
-    public void testStatus(String host, String browsers) throws Exception
+    public void testStatus(String host, String browsers, int timeout) throws Exception
     {
 	GetStatusRequest getStatusRequest = new GetStatusRequest();
 	List<Node> nodes = new ArrayList<Node>();
 	Node_ node_ = new Node_();
 	node_.setHost(host);
+	node_.setTimeout(timeout);
 	node_.setBrowsers(Arrays.asList(browsers.split(",")));
 	Node node = new Node();
 	node.setNode(node_);
