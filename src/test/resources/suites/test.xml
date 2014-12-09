@@ -2,10 +2,11 @@
 <suite verbose="2" name="GRID status client simple test" parallel="false" thread-count="0" data-provider-thread-count="0" annotations="JDK" configfailurepolicy="continue" >
 	
 	<parameter name="timeout" value="5" />
+	<parameter name="host" value="localhost" />
 	
 	<test name="Grid status simple test">
-		<parameter name="host" value="192.168.1.4" />
-		<parameter name="browsers" value="firefox,ie"/>
+		<parameter name="node" value="10.6.159.3" />
+		<parameter name="browsers" value="firefox:33,ie:9"/>
 		<classes>
 			<class name="com.qaprosoft.qa.StatusTest"/>
 		</classes>
