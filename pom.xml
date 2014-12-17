@@ -109,6 +109,9 @@
 							<value>org.uncommons.reportng.HTMLReporter</value>
 						</property>
 					</properties>
+					<suiteXmlFiles>
+						<suiteXmlFile>src/test/resources/suites/test.xml</suiteXmlFile>
+					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
