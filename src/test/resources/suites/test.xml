@@ -5,8 +5,8 @@
 	<parameter name="host" value="localhost" />
 	
 	<test name="Grid status simple test">
-		<parameter name="node" value="10.6.159.3" />
-		<parameter name="browsers" value="firefox:33,ie:9"/>
+		<parameter name="node" value="10.253.1.101" />
+		<parameter name="browsers" value="firefox:*,ie:*,chrome:*"/>
 		<classes>
 			<class name="com.qaprosoft.qa.StatusTest"/>
 		</classes>
